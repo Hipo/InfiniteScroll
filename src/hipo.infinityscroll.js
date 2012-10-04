@@ -8,7 +8,7 @@
 
 $.namespace("hipo.InfinityScroll");
 
-patio_guide.InfinityScroll = $.Class.extend({
+hipo.InfinityScroll = $.Class.extend({
 
     loader_image : "",
     content_selector : "",
@@ -30,7 +30,6 @@ patio_guide.InfinityScroll = $.Class.extend({
         this.prepare_loader();
 
     },
-
     load_content : function (response) {
 
         var content = $(this.content_selector, response).html();
