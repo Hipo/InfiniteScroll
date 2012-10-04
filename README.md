@@ -44,6 +44,6 @@ That allows you to update gui behavior of loaded content as dynamically.
 Sites using InfiniteScroll
 ==========================
 
-<http://patios.blogto.com>
+ - <http://patios.blogto.com>
 
 If you are using InfiniteScroll, you can submit your site via pull request.
