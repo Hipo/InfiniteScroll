@@ -24,26 +24,26 @@ Example of Usage
 Available Options
 =================
 
-    loader_image
-    ------------
-    An image that appears in loading process.
+loader_image
+------------
+An image that appears in loading process.
 
-    pagination_selector
-    -------------------
-    The selector of pagination element.
+pagination_selector
+-------------------
+The selector of pagination element.
 
-    next_link_selector
-    ------------------
-    The selector of next page anchor.
+next_link_selector
+------------------
+The selector of next page anchor.
 
-    content_selector
-    ----------------
-    Container element of paginated items.
+content_selector
+----------------
+Container element of paginated items.
 
-    on_page_load
-    ------------
-    A callback function that is fired at each ajax request.
-    That allows you to update gui behavior of loaded content as dynamically.
+on_page_load
+------------
+A callback function that is fired at each ajax request.
+That allows you to update gui behavior of loaded content as dynamically.
 
 
 Sites using InfiniteScroll
