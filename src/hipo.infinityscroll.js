@@ -15,8 +15,10 @@ hipo.InfinityScroll = $.Class.extend({
     pagination_selector : ".pagination",
     next_link_selector : ".pagination a.next",
     on_page_load : function () {},
+    max_page: null,
 
     loader : null,
+    active_page : 1,
 
     FOOTER_POSITION_THRESHOLD : 60,
     MOBILE_FOOTER_POSITION_THRESHOLD : 600,
@@ -40,6 +42,13 @@ hipo.InfinityScroll = $.Class.extend({
     load_page : function () {
 
         var next_page = this.get_next_page();
+        
+        if (this.max_page) {
+            if (this.active_page >= this.max_page) {
+                this.show_pagination();
+                return;
+            }
+        }
 
         if (next_page) {
 
@@ -56,6 +65,7 @@ hipo.InfinityScroll = $.Class.extend({
             };
 
             $.get(next_page, paginate.bind(this), 'html');
+            this.active_page++;
 
         }
 
@@ -81,6 +91,12 @@ hipo.InfinityScroll = $.Class.extend({
             }
 
         }.bind(this));
+
+    },
+    
+    show_pagination : function () {
+
+        $(this.pagination_selector).show();
 
     },
 
