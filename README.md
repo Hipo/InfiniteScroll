@@ -45,5 +45,6 @@ Sites using InfiniteScroll
 ==========================
 
  - <http://patios.blogto.com>
+ - <http://dbpatterns.com>
 
 If you are using InfiniteScroll, you can submit your site via pull request.
